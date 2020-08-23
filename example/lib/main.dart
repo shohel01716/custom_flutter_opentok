@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_opentok/flutter_opentok.dart';
-import 'package:flutter_opentok_example/video_session.dart';
-import 'package:flutter_opentok_example/settings.dart';
+
+import 'video_session.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,6 +17,13 @@ class _MyAppState extends State<MyApp> {
   bool publishVideo = true;
   OTFlutter controller;
   OpenTokConfiguration openTokConfiguration;
+
+  var API_KEY = "46589162";
+  var SESSION_ID =
+      "2_MX40NjU4OTE2Mn5-MTU5ODE3Njg3MTMwNH5zZXU5eW9zd2lzakJEREszMWtKemVDSmN-QX4";
+  var TOKEN =
+      "T1==cGFydG5lcl9pZD00NjU4OTE2MiZzaWc9OWNlYTJhNWVlNWQzNWI4NjdlYjY2Nzc5M2UwMjMwMjJlMzNlN2JiMTpzZXNzaW9uX2lkPTJfTVg0ME5qVTRPVEUyTW41LU1UVTVPREUzTmpnM01UTXdOSDV6WlhVNWVXOXpkMmx6YWtKRVJFc3pNV3RLZW1WRFNtTi1RWDQmY3JlYXRlX3RpbWU9MTU5ODE3Njg3MSZyb2xlPXB1Ymxpc2hlciZub25jZT0xNTk4MTc2ODcxLjM3OTYxMTQxOTk2MzkyJmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9";
+
 
   @override
   void initState() {
